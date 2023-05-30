@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        h1{
+            text-align:center;
+            font-size:40px;
+            color:rgb(3, 53, 65);
+            font-family: cursive;
+        }
+        h2{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 35px;
+        }
+        body{
+            background-color:silver;
+        }
+        .box1{
+            height: 100px;
+            width: 400px;
+            background-color: aquamarine;
+            border-radius: 30px;
+            align-items: center;
+            border: 2px solid aqua;
+            position: relative;
+            left: 110px;
+            font-size:20px ;
+        }
+        .box2{
+            height: 200px;
+            width: 500px;
+            background-color: rgb(22, 222, 155);
+            border-radius: 30px;
+            align-items: center;
+            border: 2px solid rgb(15, 183, 183);
+            position: relative;
+            left: 700px;
+            bottom: 90px;
+            font-size: 20px;
+        }
+        .a1
+        {
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(7, 126, 64);
+            background-color: rgb(0, 9, 9);
+            width: 380px;
+        }
+        .a2{
+            position: relative;
+            left: 395px;
+            bottom: 36px;
+            width: 350px;
+        }
+        .a3{
+            position: relative;
+            left: 780px;
+            bottom: 76px;
+            width: 350px;
+        }
+        .a4{
+            height: 60px;
+            width: 200px;
+            background-color: azure;
+            border:2px solid brown;
+            border-radius: 10%;
+        }
+        .a5{
+            position: relative;
+            left: 300px;
+            bottom: 82px;
+            width: 360px;
+        }
+        .a6{
+            height: 60px;
+            width: 200px;
+            background-color: azure;
+            border:2px solid brown;
+            border-radius: 10%;
+        }
+        .a7{
+            position: relative;
+            left: 700px;
+            bottom: 166px;
+            width: 360px;
+        }
+        .a8{
+            height: 80px;
+            width: 200px;
+            background-color: azure;
+            border:2px solid brown;
+            border-radius: 10%;
+        }
+        .a9{
+            position: relative;
+            bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1><b><u>COMPLETE CSS</u></b></h1>
+    <hr style="border:15px outset seagreen">
+    <h2 align="center"><u>CSS</u></h2>
+    <div style="font-size:35px ";><b>What is CSS?</b></div>
+    <div>CSS stands for cascading style sheet. </div>
+    <div>CSS is optional but it converts an off looking HTML page into a beautiful and responsive website.</div>
+    <ul>
+        <h3 style="font-size:25px">First line in css</h3>
+        <div class="container"></div>
+        <pre style="font-size: 15px;">
+            Create a .css file inside your directory and add it to your HTML
+            Add the following line to your CSS
+            body{
+                background-color:seagreen;
+            }
+            <span style="border:1px solid red";>This will make your page background as seagreen</span> <a href="https://swayanshu2323.github.io/css1/">click to see the css code</a>
+        </pre>
+    </ul>
+    <h2 align="center"><u>Creating our first CSS website</u></h2>
+    <div class="box1">
+        <div align="center"><b>DOM</b></div>
+        <div align="center">DOM stands for document object model.</div>
+        <div align="center">When a page is loaded, the browser creates a DOM of page which acts as tree of objects.</div>
+    </div>
+    <div class="box2">
+        <div align="center"><b>HTML id and attributes</b></div>
+        <div align="center">When an HTML element is given an id,it serves as an unique identifier for that element</div>
+        <div align="center">On the other hand when an HTML element is given to a class , it now belongs to that class. More than one element can belong to a single class but every element must have a unique id(if assigned).</div>
+        <div align="center"><a href="https://swayanshu2323.github.io/css3/">click to see the code</a></div>
+    </div>
+    <ul>
+    <div class="a1">
+        <div><u>Three ways to add CSS to HTML:-</u></div>
+    </div>
+        <ul type="square">
+            <div ><li><b>Style tag</b>:adding style...../style> to HTML</li><a href="https://swayanshu2323.github.io/css4/">Example</a></div>
+            <div class="a2"><li><b>Inline CSS</b>:adding CSS using style attribute</li><a href="https://swayanshu2323.github.io/css5/">Example</a></div>
+            <div class="a3"><li><b>External CSS</b>:adding a stylesheet(.css) using link tag</li><a href="https://swayanshu2323.github.io/css6/">Example</a> </div>  
+        </ul>
+    </ul>
+    <ul>
+        <span style="font-size:25px"><u>CSS selectors</u></span>
+        <span>-A CSS selector is used to select an HTMl element for styling</span>
+    </ul>
+    <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><u>Important Notes</u></h2>
+    <ul style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        <li>We can group selectors like this</li>
+        <div class="a4">
+            <div>h1,h2,h3{</div>
+            <div>&nbsp color:blue;</div>
+            <div>}</div>
+        </div>
+        <div class="a5">
+            <li>We can use element class as selectors like this</li>
+            <div class="a6">
+                <div>p.red{</div>
+                <div>&nbsp color:red;</div> 
+                <div>}</div>   
+            </div>
+        </div>
+        <div class="a7">
+            <li>'*' can be used as an universal selector to select all elements</li>
+            <div class="a8">
+                <div>*{</div>
+                    <div>&nbsp margin:0;</div>
+                    <div>&nbsp padding:0;</div> 
+                <div>}</div>   
+            </div>
+        </div>
+    </ul>
+    <div class="a9">
+    <h2 align="center"><u>Colors And Backgrounds</u></h2></div>
+</body>
+</html>
